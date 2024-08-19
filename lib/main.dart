@@ -12,10 +12,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(
-        seedColor: Colors.blue,),
-      ),
+      theme: ThemeData.light(),
+      darkTheme: ThemeData.dark(),
       home: const MyHomePage(title: 'Poke'),
     );
   }
@@ -24,6 +22,7 @@ class MyApp extends StatelessWidget {
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key, required this.title});
   final String title;
+
   @override
   State<MyHomePage> createState() => _MyHomePageState();
 }
@@ -124,6 +123,10 @@ class _PokeDetailState extends State<PokeDetail> {
             'pikachu',
             style: TextStyle(fontSize: 36, fontWeight: FontWeight.bold),
           ),
+          const Chip(
+            label: Text('electric'),
+            backgroundColor: Colors.yellow,
+          )
         ]),
       ),
     );
