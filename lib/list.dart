@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'detail.dart';
 
-class PikaListItem extends StatelessWidget {
-  const PikaListItem({Key? key, required this.index}) : super(key: key);
+class PokeListItem extends StatelessWidget {
+  const PokeListItem({Key? key, required this.index}) : super(key: key);
   final int index;
   
   @override
